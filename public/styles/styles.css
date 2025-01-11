@@ -1,0 +1,103 @@
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4dcba;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e4dcba 10px ), repeating-linear-gradient( #d0c39f, #b7a87e );
+  }
+  
+  .item-container {
+    text-align: center; 
+  }
+  
+  .coffee-list {
+    display: block;      
+    margin: 0 auto;     
+    max-width: 30%;       
+    height: auto;          
+  }
+  
+  .random-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .random-center {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .description {
+    font-family: 'Roboto', sans-serif;
+    max-width: auto; 
+    text-align: center; 
+    line-height: 1.6; 
+    font-size: 1.2em; 
+    color: #333; 
+    padding: 20px;
+  }
+
+
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  
+  .first-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .coffee-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .second-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-family: 'Titan One', cursive;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .hyper-link {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Titan One', cursive;
+  }
+  
+  .card:hover .second-content {
+    opacity: 1; 
+    pointer-events: all;
+  }
+  
